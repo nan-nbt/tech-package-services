@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNameSpace>PCaG.TechPackage</RootNameSpace>
+    <AssemblyName>ESBServiceTechPackage</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PackageId>PCaG.TechPackage</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="../../../../../../Main/PCIWebCore.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <Target Name="CopyFiles" AfterTargets="Build">
+    <ItemGroup>
+      <DllFiles Include="$(OutputPath)\ESBServiceTechPackage.dll" />
+      <PdbFiles Include="$(OutputPath)\ESBServiceTechPackage.pdb" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DllFiles)" DestinationFolder="../../_service/Dll2" />
+    <Copy SourceFiles="@(PdbFiles)" DestinationFolder="../../_service/Dll2" />
+  </Target>
+</Project>

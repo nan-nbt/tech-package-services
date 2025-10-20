@@ -1,0 +1,5 @@
+_csharp/ESBServiceTechPackage/RestClient.http
+_csharp/ESBServiceTechPackage/bin/
+_csharp/ESBServiceTechPackage/obj/
+_service/ObjectFactory/
+_service/SqlHelper/
