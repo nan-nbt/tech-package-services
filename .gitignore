@@ -1,5 +1,7 @@
 _csharp/ESBServiceTechPackage/RestClient.http
-_csharp/ESBServiceTechPackage/bin/
-_csharp/ESBServiceTechPackage/obj/
-_service/ObjectFactory/
-_service/SqlHelper/
+_csharp/ESBServiceTechPackage/bin/*
+_csharp/ESBServiceTechPackage/obj/*
+_service/ObjectFactory/*
+# _service/SqlHelper/*
+
+!_service/ObjectFactory/DB$CON.json

@@ -1,0 +1,11 @@
+DB: PCaG.ESB.TechPackage.DB
+
+Type: sql
+
+SELECT
+	COUNT(*) CNT
+FROM
+	Y_CPS_BC
+WHERE
+	FACT_NO = *FACT_NO*
+	AND FORM_NO = *FORM_NO*

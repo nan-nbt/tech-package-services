@@ -1,0 +1,12 @@
+DB: PCaG.ESB.TechPackage.DB
+
+Type: sql
+
+SELECT
+    COL_CODE,
+	COL_WS
+FROM
+	BA_COL_DATA
+WHERE
+	COL_CODE LIKE 'CPS%'
+	AND COL_VALUE IN ('CPS_ASN', 'CPS_BC')
