@@ -4,4 +4,4 @@ _csharp/ESBServiceTechPackage/obj/*
 _service/ObjectFactory/*
 # _service/SqlHelper/*
 
-!_service/ObjectFactory/DB$CON.json
+!_service/ObjectFactory/DB$DEV.json
